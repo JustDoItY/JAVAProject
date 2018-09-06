@@ -1,61 +1,49 @@
 node.js
-	- nodeÊÇÒ»¿î¶ÔES±ê×¼ÊµÏÖµÄJSÒýÇæ
-	- Í¨¹ýnode¿ÉÒÔÊ¹jsÔÚ·þÎñÆ÷ÖÐÔËÐÐ
-	- node¾ÍÊÇÒ»¿îÊ¹ÓÃjs±àÐ´µÄweb·þÎñÆ÷
-	- nodeµ×²ãÊÇÊ¹ÓÃc++µÄ±àÐ´µÄ
-	- nodeµÄÖÐjsÒýÇæÊ¹ÓÃµÄchromeµÄv8ÒýÇæ
-	- nodeµÄÌØµã£º
-		1.·Ç×èÈû¡¢Òì²½µÄI/O
-		2.ÊÂ¼þºÍ»Øµ÷º¯Êý
-		3.µ¥Ïß³Ì£¨Ö÷Ïß³Ìµ¥Ïß³Ì£¬ºóÌ¨I/OÏß³Ì³Ø£©
-		4.¿çÆ½Ì¨
-		
-	- Ä£¿é»¯
-		- ES5ÖÐÃ»ÓÐÔ­ÉúÖ§³ÖÄ£¿é»¯£¬ÎÒÃÇÖ»ÄÜÍ¨¹ýscript±êÇ©ÒýÈëjsÎÄ¼þÀ´ÊµÏÖÄ£¿é»¯
-		- ÔÚnodeÖÐÎªÁË¶ÔÄ£¿é¹ÜÀí£¬ÒýÈëÁËCommonJS¹æ·¶
-			
-			- Ä£¿éµÄÒýÓÃ
-				- Ê¹ÓÃ require()º¯ÊýÀ´ÒýÈëÒ»¸öÄ£¿é
-				- Àý×Ó£º
-					var ±äÁ¿ = require("Ä£¿éµÄ±êÊ¶");
+	- nodeï¿½ï¿½Ò»ï¿½ï¿½ï¿½ESï¿½ï¿½×¼Êµï¿½Öµï¿½JSï¿½ï¿½ï¿½ï¿½
+	- Í¨ï¿½ï¿½nodeï¿½ï¿½ï¿½ï¿½Ê¹jsï¿½Ú·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	- nodeï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ê¹ï¿½ï¿½jsï¿½ï¿½Ð´ï¿½ï¿½webï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	- nodeï¿½×²ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½c++ï¿½Ä±ï¿½Ð´ï¿½ï¿½
+	- nodeï¿½ï¿½ï¿½ï¿½jsï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ãµï¿½chromeï¿½ï¿½v8ï¿½ï¿½ï¿½ï¿½
+
+					var ï¿½ï¿½ï¿½ï¿½ = require("Ä£ï¿½ï¿½Ä±ï¿½Ê¶");
 				
-			- Ä£¿éµÄ¶¨Òå
-				- ÔÚnodeÖÐÒ»¸öjsÎÄ¼þ¾ÍÊÇÒ»¸öÄ£¿é
-				- Ä¬ÈÏÇé¿öÏÂÔÚjsÎÄ¼þÖÐ±àÐ´µÄÄÚÈÝ£¬¶¼ÊÇÔËÐÐÔÚÒ»¸ö¶ÀÁ¢µÄº¯ÊýÖÐ£¬
-					Íâ²¿µÄÄ£¿éÎÞ·¨·ÃÎÊ
-				- µ¼³ö±äÁ¿ºÍº¯Êý
-					- Ê¹ÓÃ exports 
-						- Àý×Ó£º
-							exports.ÊôÐÔ = ÊôÐÔÖµ;
-							exports.·½·¨ = º¯Êý;
+			- Ä£ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½
+				- ï¿½ï¿½nodeï¿½ï¿½Ò»ï¿½ï¿½jsï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ä£ï¿½ï¿½
+				- Ä¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½jsï¿½Ä¼ï¿½ï¿½Ð±ï¿½Ð´ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Äºï¿½ï¿½ï¿½ï¿½Ð£ï¿½
+					ï¿½â²¿ï¿½ï¿½Ä£ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½ï¿½
+				- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Íºï¿½ï¿½ï¿½
+					- Ê¹ï¿½ï¿½ exports 
+						- ï¿½ï¿½ï¿½Ó£ï¿½
+							exports.ï¿½ï¿½ï¿½ï¿½ = ï¿½ï¿½ï¿½ï¿½Öµ;
+							exports.ï¿½ï¿½ï¿½ï¿½ = ï¿½ï¿½ï¿½ï¿½;
 							
-					- Ê¹ÓÃmodule.exports
-						- Àý×Ó£º
-							module.exports.ÊôÐÔ = ÊôÐÔÖµ;
-							module.exports.·½·¨ = º¯Êý;
+					- Ê¹ï¿½ï¿½module.exports
+						- ï¿½ï¿½ï¿½Ó£ï¿½
+							module.exports.ï¿½ï¿½ï¿½ï¿½ = ï¿½ï¿½ï¿½ï¿½Öµ;
+							module.exports.ï¿½ï¿½ï¿½ï¿½ = ï¿½ï¿½ï¿½ï¿½;
 							module.exports = {};
 			
-			- Ä£¿éµÄ±êÊ¶
-				- Ä£¿éµÄ±êÊ¶¾ÍÊÇÄ£¿éµÄÃû×Ö»òÂ·¾¶
-					ÎÒÃÇnodeÍ¨¹ýÄ£¿éµÄ±êÊ¶À´Ñ°ÕÒÄ£¿éµÄ
-					¶ÔÓÚºËÐÄÄ£¿é£¨npmÖÐÏÂÔØµÄÄ£¿é£©£¬Ö±½ÓÊ¹ÓÃÄ£¿éµÄÃû×Ö¶ÔÆä½øÐÐÒýÈë
+			- Ä£ï¿½ï¿½Ä±ï¿½Ê¶
+				- Ä£ï¿½ï¿½Ä±ï¿½Ê¶ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö»ï¿½Â·ï¿½ï¿½
+					ï¿½ï¿½ï¿½ï¿½nodeÍ¨ï¿½ï¿½Ä£ï¿½ï¿½Ä±ï¿½Ê¶ï¿½ï¿½Ñ°ï¿½ï¿½Ä£ï¿½ï¿½ï¿½
+					ï¿½ï¿½ï¿½Úºï¿½ï¿½ï¿½Ä£ï¿½é£¨npmï¿½ï¿½ï¿½ï¿½ï¿½Øµï¿½Ä£ï¿½é£©ï¿½ï¿½Ö±ï¿½ï¿½Ê¹ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 						var fs = require("fs");
 						var express = require("express");
 						
-					¶ÔÓÚ×Ô¶¨ÒåµÄÎÄ¼þÄ£¿é£¬ÐèÒªÍ¨¹ýÎÄ¼þµÄÂ·¾¶À´¶ÔÄ£¿é½øÐÐÒýÈë
-						Â·¾¶¿ÉÒÔÊÇ¾ø¶ÔÂ·¾¶£¬Èç¹ûÊÇÏà¶ÔÂ·¾¶±ØÐëÒÔ./»ò ../¿ªÍ·
+					ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½Ä£ï¿½é£¬ï¿½ï¿½ÒªÍ¨ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+						Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½./ï¿½ï¿½ ../ï¿½ï¿½Í·
 						var router = require("./router");
 						
 						
-		- npmµÄÃüÁî
-			- npm -v ²é¿´npmµÄ°æ±¾
-			- npm version ²é¿´ËùÓÐÄ£¿éµÄ°æ±¾
-			- npm search °üÃû ËÑË÷°ü
-			- npm install / i °üÃû °²×°°ü
-			- npm remove / r °üÃû É¾³ý°ü
-			- npm install °üÃû --save °²×°°ü²¢Ìí¼Óµ½ÒÀÀµÖÐ *****
-			- npm install ÏÂÔØµ±Ç°ÏîÄ¿ËùÒÀÀµµÄ°ü
-			- npm install °üÃû -g È«¾Ö°²×°°ü£¨È«¾Ö°²×°µÄ°üÒ»°ã¶¼ÊÇÒ»Ð©¹¤¾ß£©
+		- npmï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			- npm -v ï¿½é¿´npmï¿½Ä°æ±¾
+			- npm version ï¿½é¿´ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½Ä°æ±¾
+			- npm search ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			- npm install / i ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½×°ï¿½ï¿½
+			- npm remove / r ï¿½ï¿½ï¿½ï¿½ É¾ï¿½ï¿½ï¿½ï¿½
+			- npm install ï¿½ï¿½ï¿½ï¿½ --save ï¿½ï¿½×°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ *****
+			- npm install ï¿½ï¿½ï¿½Øµï¿½Ç°ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä°ï¿½
+			- npm install ï¿½ï¿½ï¿½ï¿½ -g È«ï¿½Ö°ï¿½×°ï¿½ï¿½ï¿½ï¿½È«ï¿½Ö°ï¿½×°ï¿½Ä°ï¿½Ò»ï¿½ã¶¼ï¿½ï¿½Ò»Ð©ï¿½ï¿½ï¿½ß£ï¿½
 			
 			
 			
